@@ -1,0 +1,15 @@
+doctype html
+head
+  title=title
+  body
+    form(method="post" action="/signup")
+      p username
+        input(type="text" name="username" id="username"
+               placeholder="username" required="true")
+
+      P Password
+          input(type="text" name="password" id="password"
+               placeholder="password" required="true")
+      p
+        input(type="submit" name="signup" id="signup" value="register")
+        a(href='/signin')#sign-in sign in
